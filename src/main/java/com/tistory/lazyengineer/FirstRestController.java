@@ -21,4 +21,13 @@ public class FirstRestController {
 		
 		return new ResponseEntity<>(resMap, HttpStatus.OK);
 	}
+	
+	@GetMapping("/hh")
+	public ResponseEntity<?> hello1()
+	{
+		Map<String, String> resMap = new HashMap<String, String>();
+		resMap.put("key", "value1");
+		
+		return new ResponseEntity<>(resMap, HttpStatus.OK);
+	}
 }
