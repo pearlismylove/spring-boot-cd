@@ -20,10 +20,10 @@ notifications:
     recipients:
       - pearlismylove@gmail.com
 
-before_deploy:
-  - zip -r springboot-cd *
-  - mkdir -p deploy
-  - mv springboot-cd.zip deploy/springboot-cd.zip
+#before_deploy:
+#  - zip -r springboot-cd *
+#  - mkdir -p deploy
+#  - mv springboot-cd.zip deploy/springboot-cd.zip
 
 deploy:
   - provider: s3
