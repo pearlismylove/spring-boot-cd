@@ -38,3 +38,17 @@ deploy:
     on:
       repo: pearlismylove/spring-boot-cd
       branch: master
+  
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: springboot-deploy
+    key: springboot-cd.zip
+    bundle_type: zip
+    application: springboot-cd
+    deployment_group: springboot-cd-group
+    region: ap-southeast-1
+    wait-until-deployed: true
+    on:
+      repo: pearlismylove/spring-boot-cd
+      branch: master
