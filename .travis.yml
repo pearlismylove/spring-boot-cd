@@ -20,9 +20,14 @@ notifications:
     recipients:
       - pearlismylove@gmail.com
 
+before_deploy:
+  - zip -r springboot-cd *
+  - mkdir -p deploy
+  - mv springboot-cd.zip deploy/springboot-cd.zip
 
 deploy:
   - provider: s3
+    local_dir: deploy
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: springboot-deploy
