@@ -13,7 +13,7 @@
 	
 	<groupId>com.tistory</groupId>
 	<artifactId>new-spring-boot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>new-spring-boot</name>
 	<description>New project for Spring Boot</description>
 
