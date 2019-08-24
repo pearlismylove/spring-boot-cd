@@ -10,7 +10,7 @@ cache:
   directories:
     - '$HOME/.m2/repository'
 
-script: "mvn clean build"
+script: "mvn clean package"
 
 notifications:
   email:
