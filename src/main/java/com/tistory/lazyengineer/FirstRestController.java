@@ -32,6 +32,12 @@ public class FirstRestController {
 		return new ResponseEntity<>(resMap, HttpStatus.OK);
 	}
 	
+	@GetMapping("/health")
+	public String getHealth()
+	{
+		return "UP";
+	}
+	
 	@GetMapping("/hh")
 	public ResponseEntity<?> hello1()
 	{
