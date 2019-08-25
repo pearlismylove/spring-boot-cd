@@ -27,15 +27,9 @@ public class FirstRestController {
 	public ResponseEntity<?> hello()
 	{
 		Map<String, String> resMap = new HashMap<String, String>();
-		resMap.put("key", "value sadsd VVV");
+		resMap.put("key", "value sadsd v4");
 		
 		return new ResponseEntity<>(resMap, HttpStatus.OK);
-	}
-	
-	@GetMapping("/health")
-	public String getHealth()
-	{
-		return "UP";
 	}
 	
 	@GetMapping("/hh")
@@ -45,6 +39,12 @@ public class FirstRestController {
 		resMap.put("key", "value1");
 		
 		return new ResponseEntity<>(resMap, HttpStatus.OK);
+	}
+
+	@GetMapping("/health")
+	public String getHealth()
+	{
+		return "UP";
 	}
 	
 	@GetMapping("/profile")
