@@ -27,7 +27,7 @@ public class FirstRestController {
 	public ResponseEntity<?> hello()
 	{
 		Map<String, String> resMap = new HashMap<String, String>();
-		resMap.put("key", "value sadsd v4");
+		resMap.put("key", "value sadsd v5");
 		
 		return new ResponseEntity<>(resMap, HttpStatus.OK);
 	}
